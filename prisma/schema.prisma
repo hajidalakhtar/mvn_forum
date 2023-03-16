@@ -1,0 +1,52 @@
+// schema.prisma
+datasource db {
+  provider = "cockroachdb"
+  url      = "postgresql://hajid:Qgqo7zhSnKyIQlO2Y39zFg@dusk-badger-3958.6xw.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full"
+}
+
+generator client {
+  provider = "prisma-client-js"
+  casing   = "snake-case"
+}
+
+model Participant {
+  id               String             @id @default(cuid())
+  employee_number  String?
+  unit             String?
+  employee_name    String?
+  job_title_name   String?
+  job_level        String?
+  grade            String?
+  status_karyawan  String?
+  email            String?
+  created_at       DateTime           @default(now())
+  ParticipantEvent ParticipantEvent[]
+}
+
+model ParticipantEvent {
+  id             String      @id @default(cuid())
+  participant_id String
+  participant    Participant @relation(fields: [participant_id], references: [id])
+  event_id       String
+  event          Event       @relation(fields: [event_id], references: [id])
+  created_at     DateTime    @default(now())
+  attendance_at  DateTime?
+}
+
+model Event {
+  id               String             @id @default(cuid())
+  event_name       String             @unique
+  event_date       DateTime
+  ParticipantEvent ParticipantEvent[]
+}
+
+// // Define the `Post` table in the database
+// model Post {
+//   id       String  @id @default(cuid())
+//   title    String
+//   content  String?
+//   authorId String
+//   author   User    @relation(fields: [authorId], references: [id])
+// }
+
+
