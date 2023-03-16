@@ -124,7 +124,7 @@ const Home = (props) => {
             className=" w-100 h-screen"
             style={{
               backgroundSize: "cover",
-              backgroundImage: `url(https://ik.imagekit.io/jh2scbhjww/WhatsApp_Image_2023-02-21_at_15.08.06_v8-h7zqqL.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1676967635853)`,
+              backgroundImage: `url(https://ik.imagekit.io/jh2scbhjww/Corporate_MPlay_Ry7G6bFbd.jpg?updatedAt=1678936345403)`,
             }}
         >
           <br />
