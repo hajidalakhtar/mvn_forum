@@ -124,7 +124,7 @@ const Home = (props) => {
             className=" w-100 h-screen"
             style={{
               backgroundSize: "cover",
-              backgroundImage: `url(https://ik.imagekit.io/jh2scbhjww/Corporate_MPlay_Ry7G6bFbd.jpg?updatedAt=1678936345403)`,
+              backgroundImage: `url(https://ik.imagekit.io/jh2scbhjww/Template_BGArtboard_2-100_CNi5T6JyA.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676546046435)`,
             }}
         >
           <br />
