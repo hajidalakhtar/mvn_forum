@@ -90,7 +90,7 @@ const Home = (props) => {
         {/* <h1 className="text-3xl font-bold underline">{data}</h1>
 
 
-          backgroundImage: `url(https://ik.imagekit.io/jh2scbhjww/Template_BGArtboard_2-100_CNi5T6JyA.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676546046435)`,
+          backgroundImage: `url(https://ik.imagekit.io/jh2scbhjww/WhatsApp_Image_2023-05-15_at_12.46.29_Qcu6CLt6H.jpeg?updatedAt=1684141149810)`,
 
      ""
       <p>{data}</p> */}
